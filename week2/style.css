@@ -148,10 +148,10 @@ main h3 {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF;
-    color: #ffffff;
+    background-color: #0081f2;
+    color: #000000;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 20px;
     font-weight: bold;
     margin-top: 15px;
     transition: background-color 0.3s;
