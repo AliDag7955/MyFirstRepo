@@ -165,6 +165,7 @@ main h3 {
 
 .cta-container h2 {
     font-size: 35px;
+    text-transform: uppercase;
 }
 
 .cta-container p {
