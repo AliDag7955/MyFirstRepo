@@ -160,6 +160,14 @@ main h3 {
     background-color: #0056b3;
 }
 
+.cta-container h2 {
+    font-size: 35px;
+}
+
+.cta-container p {
+    font-size: 25px;
+}
+
 /* Footer Styles */
 footer {
     background-color: #333;
