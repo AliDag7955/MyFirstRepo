@@ -14,6 +14,8 @@ header {
     text-align: center;
     padding: 20px;
     background: linear-gradient(to bottom, rgb(40, 38, 140), rgb(40, 38, 70)); /* Blue to darker shade of blue Gradient background */
+    position: sticky;
+    top: 0;
 }
 
 .headeraH1 {
