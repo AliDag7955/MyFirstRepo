@@ -101,10 +101,10 @@ main h3 {
     flex-wrap: wrap;
     gap: 20px;
 }
-
+        
 .service-column {
-    flex-basis: calc(25% - 20px);
-    max-width: calc(25% - 20px);
+    flex-basis: calc(50% - 20px); /* adujusted for 2 columns per row */
+    max-width: calc(50% - 20px); /* adujusted for 2 columns per row */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,8 +112,9 @@ main h3 {
 }
 
 .service-column img {
-    width: 180px;
-    height: auto;
+    width: 100%; /* Adjusted to fit the container */
+    max-width: 250px; /* Limit the maximum width */
+    height: auto;   
     margin-bottom: 10px;
 }
 
