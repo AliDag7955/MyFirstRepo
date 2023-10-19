@@ -5,6 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wanderlust Voyages | Travel Agency</title>
   <link rel="stylesheet" href="style.css">
+  
+  <script>
+    //declare a variable and set it to 0 to be the starting point
+    let i = 0;
+  
+    //declare images variable which will be an empty array
+    let images = [];
+  
+    //declare a variable to set the time interval between each image slide, and set it to any time value in m.s
+    let time = 3000;
+  
+    //create the images list which will be the array value with images paths
+    images[0] = 'images/1.jpeg';
+    images[1] = 'images/2.jpeg';
+    images[2] = 'images/3.jpeg';
+    images[3] = 'images/4.jpeg';
+    images[4] = 'images/5.jpeg';
+    images[5] = 'images/6.jpeg';
+    images[6] = 'images/7.jpeg';
+    images[7] = 'images/8.jpeg';
+  
+    //create a function responsible for changing the source ('src') of the images element with the name 'slide' to display different images from the 'images' array
+    function changeImage() {
+      document.slide.src = images[i];
+      if (i < images.length - 1) {
+        i++;
+      } else {
+        i = 0;
+      }
+    }
+  
+    //then run function every 3 seconds
+    setInterval(changeImage, time);
+  
+    //then, run function when page loads
+    window.onload = changeImage;
+  </script>
+  
+
 </head>
 
 <body>
@@ -28,10 +67,10 @@
     </ul>
     </nav>
 
-    <!-- Banner Section -->
-    <section class="banner-container">
-      <img src="images/travel banner.svg" alt="Illustrative banner of travel destinations" class="centered-banner">
-    </section>
+  <!-- Banner Section -->
+<section class="banner-container">
+  <img name="slide" alt="Alt goes here" title="Title goes here" width="70%"/>
+</section>
 
     <!-- Main Content Section -->
     <main class="services">

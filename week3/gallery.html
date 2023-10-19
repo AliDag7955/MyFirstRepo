@@ -40,6 +40,45 @@
   <main class="services">
       <h1>Gallery</h1>
 
+      <div class ="container">
+        <div class ="mySlides">
+          <div class ="numbertext">1 / 8</div>
+          <img src="images/1.jpeg" alt ="Spa Image 1" class ="slideshow-img">
+        </div>
+        <div class ="mySlides">
+          <div class ="numbertext">2 / 8</div>
+          <img src="images/2.jpeg" alt ="Spa Image 2" class ="slideshow-img">
+        </div>
+        <div class ="mySlides">
+          <div class ="numbertext">3 / 8</div>
+          <img src="images/3.jpeg" alt ="Spa Image 3" class ="slideshow-img">
+        </div>
+        <div class ="mySlides">
+          <div class ="numbertext">4 / 8</div>
+          <img src="images/4.jpeg" alt ="Spa Image 4" class ="slideshow-img">
+        </div>
+        <div class ="mySlides">
+          <div class ="numbertext">5 / 8</div>
+          <img src="images/5.jpeg" alt ="Spa Image 5" class ="slideshow-img">
+        </div>
+        <div class ="mySlides">
+          <div class ="numbertext">6 / 8</div>
+          <img src="images/6.jpeg" alt ="Spa Image 6" class ="slideshow-img">
+        </div>
+        <div class ="mySlides">
+          <div class ="numbertext">7 / 8</div>
+          <img src="images/7.jpeg" alt ="Spa Image 7" class ="slideshow-img">
+        </div>
+        <div class ="mySlides">
+          <div class ="numbertext">8 / 8</div>
+          <img src="images/8.jpeg" alt ="Spa Image 8" class ="slideshow-img">
+        </div>
+        
+
+        <a class ="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class ="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
 		<div class="gallery-container">
 			<img src="images/1.jpeg" alt="Spa Image 1">
 			<img src="images/2.jpeg" alt="Spa Image 2">
@@ -58,6 +97,31 @@
   </section>
 
   </main>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+  </script>
+
   <footer>
       <ul>
         <li><a href="https://www.facebook.com/">Facebook</a></li>
